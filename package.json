@@ -1,0 +1,48 @@
+{
+  "name": "dvb-i-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for DVB-I Service Discovery and Programme Metadata (ETSI TS 103 770)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "dev": "node --loader ts-node/esm --watch index.ts"
+  },
+  "keywords": [
+    "dvb-i",
+    "mcp",
+    "model-context-protocol",
+    "digital-television",
+    "service-discovery",
+    "etsi",
+    "tva",
+    "hbbtv"
+  ],
+  "author": "CCMA-Enginyeria",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CCMA-Enginyeria/dvb-i-mcp-server"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "axios": "^1.7.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fast-xml-parser": "5.2.5",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
